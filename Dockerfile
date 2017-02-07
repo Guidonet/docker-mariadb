@@ -7,7 +7,7 @@
 # On additional nodes: docker run -d -p 3306:3306 -p 4567:4567 -p 4444:4444 -p 4568:4568 -e CLUSTER=192.168.1.165,192.168.1.162,192.168.1.156,192.168.1.157 -e CLUSTER_NAME=mariadb -e MYSQL_ROOT_PASSWORD=password -e IP=192.168.1.162 -v /data/mariadb:/var/lib/mysql --name mariadb2 mariadb
 
 FROM centos:7
-MAINTAINER derek andrews <derek.andrews@usbank.com>
+MAINTAINER derek andrews <derek@premiereit.net>
 
 # Add Maria Repo
 RUN echo -e "[mariadb] \nname = MariaDB \nbaseurl = http://yum.mariadb.org/10.1/centos7-amd64 \ngpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB \ngpgcheck=1 \n " > /etc/yum.repos.d/MariaDB.repo
